@@ -7,7 +7,7 @@ import { fetchHomepage } from "../libs/payload";
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ locale: string }>
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
   const data = await fetchHomepage(locale);

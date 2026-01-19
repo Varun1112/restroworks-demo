@@ -6,7 +6,9 @@ import CTA from "../blocks/CTA";
 const Homepage: GlobalConfig = {
   slug: "homepage",
   label: "Homepage",
-
+  access: {
+    read: () => true, // Allow public read access
+  },
   fields: [
     {
       name: "seo",
