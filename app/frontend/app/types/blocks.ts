@@ -24,8 +24,20 @@ export type CTABlock = {
   link: string;
 };
 
+export type ContactFormBlock = {
+  blockType: "contact-form-config";
+  nameLabel: string;
+  emailLabel: string;
+  messageLabel: string;
+  submitButtonText: string;
+  submittingButtonText: string;
+  successMessage: string;
+  errorMessage: string;
+};
+
 export type PageBlock =
   | HeroBlock
   | FeatureBlock
   | TestimonialBlock
-  | CTABlock;
+  | CTABlock
+  | ContactFormBlock;

@@ -2,6 +2,7 @@ import { GlobalConfig } from "payload";
 import Hero from "../blocks/Hero";
 import Testimonial from "../blocks/Testimonial";
 import CTA from "../blocks/CTA";
+import ContactFormConfig from "../blocks/ContactFormConfig";
 
 const Homepage: GlobalConfig = {
   slug: "homepage",
@@ -30,7 +31,7 @@ const Homepage: GlobalConfig = {
     {
       name: "blocks",
       type: "blocks",
-      blocks: [Hero, Testimonial, CTA],
+      blocks: [Hero, Testimonial, CTA, ContactFormConfig],
     },
   ],
 };
